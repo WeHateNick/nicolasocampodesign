@@ -6,12 +6,12 @@ export default function Timeline() {
     <section className={styles.timeline}>
       <TimelineItem
         endYear={false}
-        startYear={2019}
+        startYear={2017}
         intro="I am Head of Product at Politech"
         companyName="Politech"
       />
       <TimelineItem
-        endYear={2019}
+        endYear={2017}
         startYear={2014}
         intro="I was a UX Designer and Frontend Developer at"
         companyName="MortarStone"
@@ -48,8 +48,7 @@ export default function Timeline() {
         </div>
       </TimelineItem>
       <TimelineItem
-        endYear={2019}
-        startYear={2014}
+        endYear={2017}
         intro="I did some freelance work for some enterprises like"
         companyName="HPE and Cisco"
       >
