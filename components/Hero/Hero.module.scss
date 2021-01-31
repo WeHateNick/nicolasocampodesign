@@ -1,0 +1,42 @@
+@import "styles/variables";
+
+.hero {
+  font-family: $font__family__zilla;
+  margin: 1.5em 0;
+  display: flex;
+  flex-flow: column;
+  @include layout--large("invert") {
+    margin: 2em 0 3em;
+  }
+  &__block {
+    padding: 1em 2em;
+    border: 4px solid transparent;
+    border-radius: 2px;
+    margin: 0 2em;
+    &--down {
+      border-color: $palette__stroke;
+      transform: translateY(1.5em);
+      @include quint-ease-out(transform, 1.6s, border-color, 1.6s);
+    }
+    &--1 {
+      margin-right: 15%;
+    }
+    &--2 {
+      margin-left: 15%;
+    }
+    &__wrapper {
+      background-color: $palette__accent;
+      margin: 2em 0 1em;
+    }
+  }
+  &__label {
+    font-weight: $font__weight--thin;
+    font-size: 1.1em;
+    margin-bottom: -0.5em;
+  }
+  &__heading {
+    font-weight: $font__weight--bold;
+    font-size: 2.7em;
+    margin: 0.25em;
+  }
+}

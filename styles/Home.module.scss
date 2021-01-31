@@ -1,31 +1,5 @@
 @import "./variables";
 
-.sidenav {
-  position: relative;
-  background-color: $palette__background;
-  border-right: 6px solid $palette__accent--secondary;
-  padding: 3em 0;
-  &__item {
-    position: relative;
-    display: block;
-    color: $palette__text--light;
-    text-decoration: none;
-    padding: 1em 2em;
-    font-weight: $font__weight--bold;
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: red;
-      cursor: pointer;
-    }
-  }
-  .menu-button {
-    color: $palette__text--light;
-    margin: -2em 1em 1em;
-    .fa {
-      color: $palette__text--light;
-    }
-  }
-}
 .menu-button {
   margin: 1em 1em -1em;
 }
@@ -38,35 +12,6 @@
     a {
       color: $palette__text;
     }
-  }
-}
-.hero {
-  font-family: $font__family__zilla;
-  background-color: $palette__accent;
-  padding: 0 2em;
-  margin: 1.5em 0;
-  @include layout--large("invert") {
-    margin: 2em 0 3em;
-  }
-  &__block {
-    padding: 1em 2em;
-    border: 4px solid transparent;
-    border-radius: 2px;
-    &--down {
-      border-color: $palette__stroke;
-      transform: translateY(1.5em);
-      @include quint-ease-out(transform, 1.6s, border-color, 1.6s);
-    }
-  }
-  &__label {
-    font-weight: $font__weight--thin;
-    font-size: 1.1em;
-    margin-bottom: -0.5em;
-  }
-  &__heading {
-    font-weight: $font__weight--bold;
-    font-size: 2.7em;
-    margin: 0.25em;
   }
 }
 .section {
