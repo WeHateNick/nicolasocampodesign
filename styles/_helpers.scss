@@ -1,0 +1,29 @@
+$box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.12),
+  0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+$rule: thin solid $palette__rule;
+
+$breakpoint--small: 600px;
+$breakpoint--medium: 960px;
+
+@mixin layout--small($invert: false) {
+  @if $invert == false {
+    @media screen and (max-width: $breakpoint--small) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $breakpoint--small) {
+      @content;
+    }
+  }
+}
+@mixin layout--large($invert: false) {
+  @if $invert == false {
+    @media screen and (min-width: $breakpoint--medium) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $breakpoint--medium) {
+      @content;
+    }
+  }
+}
