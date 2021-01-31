@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.timeline {
+  &__links {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  p {
+    max-width: 35em;
+    a {
+      color: $palette__text;
+    }
+  }
+}
