@@ -10,7 +10,9 @@ export default function Home() {
   const [initialized, initialize] = useState(false);
 
   useEffect(() => {
-    initialize(true);
+    setTimeout(() => {
+      initialize(true);
+    }, 800);
   }, []);
 
   return (
@@ -23,13 +25,13 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.hero}>
           <div
-            className={cs("hero__block", { "hero__block--down": initialize })}
+            className={cs("hero__block", { "hero__block--down": initialized })}
           >
             <p className={styles.hero__label}>My name is</p>
             <h1 className={styles.hero__heading}>Nicolas Ocampo</h1>
           </div>
           <div
-            className={cs("hero__block", { "hero__block--down": initialize })}
+            className={cs("hero__block", { "hero__block--down": initialized })}
           >
             <p className={styles.hero__label}>I am a</p>
             <h2 className={styles.hero__heading}>Product Designer</h2>
