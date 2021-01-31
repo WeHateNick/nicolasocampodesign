@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames/bind";
+import Sidebar from "../components/Sidebar/Sidebar";
 import Timeline from "../components/Timeline/Timeline";
 
 let cs = classNames.bind(styles);
@@ -21,6 +22,10 @@ export default function Home() {
         <title>Nicolas Ocampo Product Design</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <nav>
+        <Sidebar />
+      </nav>
 
       <main className={styles.main}>
         <section className={styles.hero}>
