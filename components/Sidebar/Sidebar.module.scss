@@ -1,0 +1,25 @@
+@import "styles/variables";
+
+.sidebar {
+  position: relative;
+  background-color: $palette__background;
+  border-right: 6px solid $palette__accent--secondary;
+  padding: 3em 0;
+  box-shadow: $box-shadow--sidebar;
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    color: $palette__text--light;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-weight: $font__weight--bold;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: red;
+      cursor: pointer;
+    }
+  }
+}

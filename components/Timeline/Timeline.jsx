@@ -3,7 +3,7 @@ import TimelineItem from "../TimelineItem/TimelineItem";
 
 export default function Timeline() {
   return (
-    <section>
+    <section className={styles.timeline}>
       <TimelineItem
         endYear={false}
         startYear={2019}

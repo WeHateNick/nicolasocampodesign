@@ -1,6 +1,9 @@
+$rule: thin solid $palette__rule;
+
 $box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.12),
   0px 2px 2px 0px rgba(0, 0, 0, 0.24);
-$rule: thin solid $palette__rule;
+$box-shadow--sidebar: 0 2px 4px -1px rgb(0 0 0 / 20%),
+  0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
 
 $breakpoint--small: 600px;
 $breakpoint--medium: 960px;
