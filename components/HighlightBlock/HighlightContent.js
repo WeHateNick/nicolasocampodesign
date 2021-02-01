@@ -5,7 +5,7 @@ const highlightContent = {
       {
         id: 1,
         label: "Product management",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=app-development",
         startYear: 2013,
         tools: [
           "Usability testing",
@@ -17,14 +17,14 @@ const highlightContent = {
       {
         id: 2,
         label: "Design",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=designertool-war",
         startYear: 2014,
         tools: ["Figma", "Storybook", "Haiku animator", "Sketch"]
       },
       {
         id: 3,
         label: "Web development",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=coding",
         startYear: 2011,
         tools: ["React", "CSS modules", "Jamstack"]
       }
@@ -37,17 +37,18 @@ const highlightContent = {
       {
         id: 1,
         label: "Process",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=chemistry-lab",
         tools: [
           "Project management systems",
           "React layout systems",
           "Feature request and bug intake processes"
-        ]
+        ],
+        active: true
       },
       {
         id: 2,
         label: "Design systems",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=ui-ux",
         tools: [
           "Figma design systems",
           "Storybook component libraries",
@@ -57,7 +58,7 @@ const highlightContent = {
       {
         id: 3,
         label: "Discovery and evaluation",
-        icon: "",
+        icon: "https://s2.svgbox.net/illlustrations.svg?ic=map-location",
         tools: [
           "Usability testing",
           "Problem discovery interviews",

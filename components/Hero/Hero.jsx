@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import classNames from "classnames/bind";
 
-let cs = classNames.bind(styles);
+let cn = classNames.bind(styles);
 
 export default function Home() {
   const [initialized, initialize] = useState(false);
@@ -17,7 +17,7 @@ export default function Home() {
     <section className={styles.hero}>
       <div className={styles.hero__block__wrapper}>
         <div
-          className={cs("hero__block", "hero__block--1", {
+          className={cn("hero__block", "hero__block--1", {
             "hero__block--down": initialized
           })}
         >
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <div className={styles.hero__block__wrapper}>
         <div
-          className={cs("hero__block", "hero__block--2", {
+          className={cn("hero__block", "hero__block--2", {
             "hero__block--down": initialized
           })}
         >

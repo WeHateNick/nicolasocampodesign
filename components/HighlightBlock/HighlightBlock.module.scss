@@ -13,14 +13,37 @@
   }
 }
 .highlight {
+  width: 25%;
+  height: 200px;
+  border-top: 4px solid $palette__accent--secondary;
+  padding: 1em 0;
   &__boxes {
+    position: relative;
     display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 0;
     text-align: center;
+    padding: 1em;
+  }
+  &__icon img {
+    height: 100px;
+    width: auto;
   }
   &__tools {
     display: none;
+    &--active {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      position: absolute;
+      width: 90%;
+      border-radius: 3px;
+      background: $palette__accent;
+      border: 3px solid rgba(0, 0, 0, 0.72);
+    }
   }
 }
