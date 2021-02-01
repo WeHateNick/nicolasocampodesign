@@ -1,7 +1,7 @@
 @import "styles/variables";
 
 .section {
-  margin: 2.5em;
+  margin: 4em 2.5em;
   padding-top: 2em;
   @include layout--small {
     margin-left: 1em;
@@ -15,8 +15,9 @@
 .highlight {
   width: 25%;
   height: 200px;
-  border-top: 4px solid $palette__accent--secondary;
+  border-top: 4px solid transparent;
   padding: 1em 0;
+  flex: 1;
   &__boxes {
     position: relative;
     display: flex;
@@ -24,6 +25,7 @@
     list-style: none;
     padding: 0;
     text-align: center;
+    margin-top: 2em;
     padding: 1em;
   }
   &__icon img {
@@ -32,7 +34,10 @@
   }
   &__tools {
     display: none;
-    &--active {
+  }
+  &:hover {
+    border-color: $palette__accent--secondary;
+    .highlight__tools {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
@@ -40,6 +45,7 @@
       padding: 0.5em 1em;
       margin-top: 1em;
       position: absolute;
+      left: 3em;
       width: 90%;
       border-radius: 3px;
       background: $palette__accent;
