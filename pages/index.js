@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout/Layout";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Hero from "../components/Hero/Hero";
+import HighlightBlock from "../components/HighlightBlock/HighlightBlock";
 import Timeline from "../components/Timeline/Timeline";
 
 export default function Home() {
@@ -17,26 +18,8 @@ export default function Home() {
         <Sidebar />
         <main className={styles.main}>
           <Hero />
-          <section className={styles.section}>
-            <p className="section__header">
-              My career has been focused on three main areas
-            </p>
-            <ul>
-              <li>Product management</li>
-              <li>Design</li>
-              <li>Coding</li>
-            </ul>
-          </section>
-          <section className={styles.section}>
-            <p className={styles.section__header}>
-              I have done work in a variety of settings
-            </p>
-            <ul>
-              <li>SaaS products</li>
-              <li>Startups</li>
-              <li>Agencies</li>
-            </ul>
-          </section>
+          <HighlightBlock type="skills" />
+          <HighlightBlock type="experience" />
           <Timeline />
         </main>
       </Layout>

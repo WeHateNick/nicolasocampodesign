@@ -14,18 +14,6 @@
     }
   }
 }
-.section {
-  margin: 2.5em;
-  padding-top: 2em;
-  @include layout--small {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  &__header {
-    font-family: $font__family__zilla;
-    font-weight: $font__weight--medium;
-  }
-}
 .highlight-block {
   margin-top: 2em;
   &__item {
