@@ -1,5 +1,6 @@
 import styles from "./HighlightBlock.module.scss";
 import allContent from "./HighlightContent";
+import moment from "moment";
 
 export default function Home({ type }) {
   const content = allContent[type];
@@ -7,20 +8,19 @@ export default function Home({ type }) {
   return (
     <section className={styles.section}>
       <p className={styles.section__header}>{content.intro}</p>
-      <div className={styles["highlight-boxes"]}>
-        <ul>
-          {content.items.map(item => (
-            <li>
-              <h3>{item.label}</h3>
-              <ul>
-                {item.tools.map(tool => (
-                  <li>{tool}</li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className={styles["highlight__boxes"]}>
+        {content.items.map(item => (
+          <li>
+            <h3>{item.label}</h3>
+            <p>{moment().diff(`${item.startYear}-01-01`, "years")} years</p>
+            <ul className={styles.highlight__tools}>
+              {item.tools.map(tool => (
+                <li>{tool}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

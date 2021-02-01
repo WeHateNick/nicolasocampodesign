@@ -12,3 +12,15 @@
     font-weight: $font__weight--medium;
   }
 }
+.highlight {
+  &__boxes {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  &__tools {
+    display: none;
+  }
+}
