@@ -98,11 +98,11 @@ export default function Timeline() {
             BetaFish marketing website
           </a>
         </div>
+        <p>
+          I made custom web development and branding for several smaller
+          freelance clients
+        </p>
         <div className={styles.timeline__links}>
-          <p>
-            I made custom web development and branding for several smaller
-            freelance clients
-          </p>
           <a
             href="https://medium.com/nick-ocampo/sotelo-for-reno-brand-development-8c044cf9b548"
             tooltip="Case study"
