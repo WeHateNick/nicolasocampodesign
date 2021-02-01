@@ -49,11 +49,13 @@ export default function Timeline() {
       </TimelineItem>
       <TimelineItem
         endYear={2017}
-        intro="I did some freelance work for some enterprises like"
-        companyName="HPE and Cisco"
+        startYear={2014}
+        intro="I ran my own freelance design and development business"
+        companyName="Design Freelance Work"
       >
         <p>
           I designed, prototyped and created dynamic reports built in AngularJS
+          for enterprises like Cisco and HPE
         </p>
         <div className={styles.timeline__links}>
           <a
@@ -73,12 +75,7 @@ export default function Timeline() {
             HPE Security Assessment
           </a>
         </div>
-      </TimelineItem>
-      <TimelineItem
-        endYear={2016}
-        intro="I started a project called BetaFish"
-        companyName="BetaFish"
-      >
+        <p>I started a product called BetaFish</p>
         <p>
           BetaFish is a feedback gathering application that allows product
           designers to collect feedback on their products
@@ -101,13 +98,11 @@ export default function Timeline() {
             BetaFish marketing website
           </a>
         </div>
-      </TimelineItem>
-      <TimelineItem
-        endYear={2015}
-        intro="I did freelance design and development"
-        companyName="Freelance work"
-      >
         <div className={styles.timeline__links}>
+          <p>
+            I made custom web development and branding for several smaller
+            freelance clients
+          </p>
           <a
             href="https://medium.com/nick-ocampo/sotelo-for-reno-brand-development-8c044cf9b548"
             tooltip="Case study"
