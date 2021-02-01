@@ -2,7 +2,7 @@
 
 .sidebar {
   position: relative;
-  background-color: $palette__background;
+  background-color: $palette__background--sidebar;
   border-right: 6px solid $palette__accent--secondary;
   padding: 1.2em 0;
   box-shadow: $shadow--sidebar;
@@ -12,7 +12,7 @@
   &__item {
     position: relative;
     display: block;
-    color: $palette__text--light;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     padding: 1em 2em;
     font-weight: $font__weight--bold;

@@ -38,7 +38,6 @@ const highlightContent = {
         id: 1,
         label: "Process",
         icon: "",
-        startYear: 2013,
         tools: [
           "Project management systems",
           "React layout systems",
@@ -49,7 +48,6 @@ const highlightContent = {
         id: 2,
         label: "Design systems",
         icon: "",
-        startYear: 2014,
         tools: [
           "Figma design systems",
           "Storybook component libraries",
@@ -58,9 +56,8 @@ const highlightContent = {
       },
       {
         id: 3,
-        label: "Discovery and result tracking",
+        label: "Discovery and evaluation",
         icon: "",
-        startYear: 2011,
         tools: [
           "Usability testing",
           "Problem discovery interviews",

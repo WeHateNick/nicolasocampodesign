@@ -12,7 +12,9 @@ export default function Home({ type }) {
         {content.items.map(item => (
           <li>
             <h3>{item.label}</h3>
-            <p>{moment().diff(`${item.startYear}-01-01`, "years")} years</p>
+            {item.startYear && (
+              <p>{moment().diff(`${item.startYear}-01-01`, "years")} years</p>
+            )}
             <ul className={styles.highlight__tools}>
               {item.tools.map(tool => (
                 <li>{tool}</li>
