@@ -7,12 +7,7 @@ const highlightContent = {
         label: "Product management",
         icon: "https://s2.svgbox.net/illlustrations.svg?ic=app-development",
         startYear: 2013,
-        tools: [
-          "Usability testing",
-          "Product management",
-          "Behavioral analytics",
-          "SEO and SEM"
-        ]
+        tools: ["Usability testing", "Behavioral analytics", "Roadmaps"]
       },
       {
         id: 2,
