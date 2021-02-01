@@ -3,19 +3,14 @@
 .section {
   margin: 4em 2.5em;
   padding-top: 2em;
-  @include layout--small {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
   &__header {
     font-family: $font__family__zilla;
     font-weight: $font__weight--medium;
   }
 }
 .highlight {
-  width: 25%;
   border-top: 4px solid transparent;
-  padding: 2em 0;
+  padding: 2em 0.25em;
   flex: 1;
   &__boxes {
     position: relative;
@@ -26,10 +21,15 @@
     text-align: center;
     margin-top: 2em;
     padding: 1em;
+    @include layout--small {
+      flex-flow: column;
+      align-items: center;
+    }
   }
   &__icon img {
     height: 100px;
     width: auto;
+    padding: 2%;
   }
   &__tools {
     opacity: 0;
@@ -45,6 +45,9 @@
     border-radius: 3px;
     background: $palette__accent;
     border: 3px solid rgba(0, 0, 0, 0.72);
+    @include layout--small {
+      display: none;
+    }
   }
   &:hover {
     border-color: $palette__accent--secondary;
@@ -53,6 +56,10 @@
     .highlight__tools {
       opacity: 1;
       @include quint-ease-out(opacity, 300ms);
+    }
+    @include layout--small {
+      border-color: transparent;
+      box-shadow: none;
     }
   }
 }

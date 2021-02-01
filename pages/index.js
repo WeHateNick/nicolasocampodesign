@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Sidebar />
+        <Sidebar className={styles.sidebar} />
         <main className={styles.main}>
           <Hero />
           <HighlightBlock type="skills" />

@@ -1,9 +1,30 @@
+import { useState } from "react";
 import styles from "./Sidebar.module.scss";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
+import classnames from "classnames/bind";
+let cn = classnames.bind(styles);
 
 export default function Sidebar() {
+  const [collapsed, collapse] = useState(true);
   return (
     <nav className={styles.sidebar}>
-      <ul className={styles.sidebar__list}>
+      <button
+        type="button"
+        className={styles["menu-toggle"]}
+        onClick={() => {
+          collapse(!collapsed);
+        }}
+      >
+        Menu{" "}
+        <span className={styles["menu-toggle__icon"]}>
+          <ChevronDownIcon />
+        </span>
+      </button>
+      <ul
+        className={cn("sidebar__list", {
+          "sidebar__list--collapsed": collapsed
+        })}
+      >
         <li className={styles.sidebar__item}>
           <a href="mailto:nick@wehatenick.com" target="_blank" alt="Contact">
             Contact

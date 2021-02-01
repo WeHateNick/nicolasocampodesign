@@ -1,4 +1,9 @@
+@import "styles/variables";
+
 .container {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(500px, 4fr);
+  @include layout--medium {
+    grid-template-columns: 1fr;
+  }
 }

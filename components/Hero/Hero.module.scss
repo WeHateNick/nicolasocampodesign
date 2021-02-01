@@ -5,9 +5,6 @@
   margin: 1.5em 0;
   display: flex;
   flex-flow: column;
-  @include layout--large("invert") {
-    margin: 2em 0 3em;
-  }
   &__block {
     padding: 1em 2em;
     border: 4px solid transparent;

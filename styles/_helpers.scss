@@ -12,25 +12,20 @@ $shadow--sidebar: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
 $breakpoint--small: 600px;
 $breakpoint--medium: 960px;
 
-@mixin layout--small($invert: false) {
-  @if $invert == false {
-    @media screen and (max-width: $breakpoint--small) {
-      @content;
-    }
-  } @else {
-    @media screen and (min-width: $breakpoint--small) {
-      @content;
-    }
+@mixin layout--small {
+  @media screen and (max-width: $breakpoint--small) {
+    @content;
   }
 }
-@mixin layout--large($invert: false) {
-  @if $invert == false {
-    @media screen and (min-width: $breakpoint--medium) {
-      @content;
-    }
-  } @else {
-    @media screen and (max-width: $breakpoint--medium) {
-      @content;
-    }
+
+@mixin layout--medium {
+  @media screen and (max-width: $breakpoint--medium) {
+    @content;
+  }
+}
+
+@mixin layout--large {
+  @media screen and (max-width: $breakpoint--large) {
+    @content;
   }
 }

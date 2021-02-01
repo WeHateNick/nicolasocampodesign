@@ -8,6 +8,18 @@
   box-shadow: $shadow--sidebar;
   &__list {
     padding: 0;
+    margin: 0;
+    overflow: hidden;
+    @include layout--medium {
+      height: 285px;
+      @include quint-ease-in(height, 300ms);
+    }
+    &--collapsed {
+      @include layout--medium {
+        height: 0;
+        @include quint-ease-out(height, 300ms);
+      }
+    }
   }
   &__item {
     position: relative;
@@ -21,5 +33,22 @@
       text-decoration-color: red;
       cursor: pointer;
     }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  padding: 1.2em 2em 1em;
+  margin: 1em 2em;
+  font-weight: $font__weight--bold;
+  border-radius: 6px;
+  box-shadow: $shadow--small;
+  background-color: $palette__accent;
+  &__icon {
+    padding-left: 0.5em;
+  }
+  @include layout--medium {
+    display: flex;
+    justify-content: space-around;
   }
 }
