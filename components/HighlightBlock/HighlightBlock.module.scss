@@ -14,9 +14,8 @@
 }
 .highlight {
   width: 25%;
-  height: 200px;
   border-top: 4px solid transparent;
-  padding: 1em 0;
+  padding: 2em 0;
   flex: 1;
   &__boxes {
     position: relative;
@@ -33,23 +32,27 @@
     width: auto;
   }
   &__tools {
-    display: none;
+    opacity: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    position: absolute;
+    left: 1em;
+    right: 1em;
+    border-radius: 3px;
+    background: $palette__accent;
+    border: 3px solid rgba(0, 0, 0, 0.72);
   }
   &:hover {
     border-color: $palette__accent--secondary;
+    box-shadow: $shadow--medium;
+    @include quint-ease-out(box-shadow, 300ms);
     .highlight__tools {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      list-style: none;
-      padding: 0.5em 1em;
-      margin-top: 1em;
-      position: absolute;
-      left: 3em;
-      right: 1em;
-      border-radius: 3px;
-      background: $palette__accent;
-      border: 3px solid rgba(0, 0, 0, 0.72);
+      opacity: 1;
+      @include quint-ease-out(opacity, 300ms);
     }
   }
 }
