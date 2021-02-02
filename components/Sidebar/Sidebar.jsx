@@ -26,7 +26,11 @@ export default function Sidebar() {
         })}
       >
         <li className={styles.sidebar__item}>
-          <a href="mailto:nick@wehatenick.com" target="_blank" alt="Contact">
+          <a
+            href="mailto:contact@nicolasocampo.design"
+            target="_blank"
+            alt="Contact"
+          >
             Contact
           </a>
         </li>
@@ -50,7 +54,7 @@ export default function Sidebar() {
         </li>
         <li className={styles.sidebar__item}>
           <a
-            href="https://thewolfdesign.smugmug.com/Logos"
+            href="https://medium.com/nick-ocampo/logo-gallery-75bf51deece0"
             target="_blank"
             alt="Logo gallery"
           >

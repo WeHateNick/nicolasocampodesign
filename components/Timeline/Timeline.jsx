@@ -74,14 +74,6 @@ export default function Timeline() {
           >
             Data viz with D3.js
           </a>
-          <a
-            href="https://docs.google.com/document/d/1CEGVMYzGAh57SMIr0YvFx-2H3XjHjOkEBC0MjCgtB7c"
-            tooltip="Sample"
-            target="_blank"
-            alt="Design style guide"
-          >
-            Design style guide
-          </a>
         </div>
       </TimelineItem>
       <TimelineItem
@@ -119,7 +111,7 @@ export default function Timeline() {
             Henry Sotelo Campaign brand development
           </a>
           <a
-            href="https://thewolfdesign.smugmug.com/Logo-Design"
+            href="https://medium.com/nick-ocampo/logo-gallery-75bf51deece0"
             tooltip="Logo gallery"
             target="_blank"
             alt="Logo design for various clients"
