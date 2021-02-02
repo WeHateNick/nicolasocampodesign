@@ -1,6 +1,6 @@
 const highlightContent = {
   skills: {
-    intro: "My career has focused on three main areas",
+    intro: "My career has been focused on three main areas",
     items: [
       {
         id: 1,
@@ -27,7 +27,7 @@ const highlightContent = {
   },
   experience: {
     intro:
-      "Now I focus on building and maintaining organizational systems that allow for those three areas to work together",
+      "Now I build and maintain organizational systems that allow for those three areas to work together",
     items: [
       {
         id: 1,

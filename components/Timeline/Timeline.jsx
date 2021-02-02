@@ -9,7 +9,44 @@ export default function Timeline() {
         startYear={2017}
         intro="I am Head of Product at Politech"
         companyName="Politech"
-      />
+      >
+        <p>
+          As head of product, I manage the design and development of our voter
+          advocacy SaaS platform{" "}
+          <a href="http://blocks.im" target="_blank" alt="Blocks website" />. I
+          run a product through our development cycle, starting by feature
+          discovery and ideation, into design and implementation. I like to be
+          involved in all stages, including making mockups and comitting code,
+          while relying on experts in my team to make most of decisions on their
+          areas of expertise.
+        </p>
+        <div className={styles.timeline__links}>
+          <a
+            href="https://medium.com/nick-ocampo/phone-banking-in-blocks-f1b7f673f0a4"
+            tooltip="Case study"
+            target="_blank"
+            alt="Phone banking in Blocks"
+          >
+            Phone banking in Blocks
+          </a>
+          <a
+            href="https://medium.com/nick-ocampo/a-search-app-for-the-biden-campaign-79099c4fe995"
+            tooltip="Case study"
+            target="_blank"
+            alt="A search app for the Biden campaign"
+          >
+            A search app for the Biden campaign
+          </a>
+          <a
+            href="https://medium.com/nick-ocampo/online-voter-registration-in-blocks-962579894fbd"
+            tooltip="Case study"
+            target="_blank"
+            alt="Online Voter Registration in Blocks"
+          >
+            Online Voter Registration in Blocks
+          </a>
+        </div>
+      </TimelineItem>
       <TimelineItem
         endYear={2017}
         startYear={2014}
@@ -53,28 +90,6 @@ export default function Timeline() {
         intro="I ran my own freelance design and development business"
         companyName="Design Freelance Work"
       >
-        <p>
-          I designed, prototyped and created dynamic reports built in AngularJS
-          for enterprises like Cisco and HPE
-        </p>
-        <div className={styles.timeline__links}>
-          <a
-            href="https://mainstayadvisor.com/go/cisco/tetration/"
-            tooltip="Production app"
-            target="_blank"
-            alt="Cisco Tetration ROI Tool"
-          >
-            Cisco Tetration ROI Tool
-          </a>
-          <a
-            href="https://mainstayadvisor.com/go/hpe/hpe-security/"
-            tooltip="Production app"
-            target="_blank"
-            alt="HPE Security Assessment"
-          >
-            HPE Security Assessment
-          </a>
-        </div>
         <p>I started a product called BetaFish</p>
         <p>
           BetaFish is a feedback gathering application that allows product
@@ -88,14 +103,6 @@ export default function Timeline() {
             alt="BetaFish widget design"
           >
             BetaFish widget design
-          </a>
-          <a
-            href="http://betafish.io"
-            tooltip="Marketing website"
-            target="_blank"
-            alt="BetaFish marketing website"
-          >
-            BetaFish marketing website
           </a>
         </div>
         <p>
