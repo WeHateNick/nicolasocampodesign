@@ -7,10 +7,12 @@
   padding: 1.2em 0;
   box-shadow: $shadow--sidebar;
   &__list {
+    position: fixed;
     padding: 0;
     margin: 0;
     overflow: hidden;
     @include layout--medium {
+      position: relative;
       height: 285px;
       @include quint-ease-in(height, 300ms);
     }
